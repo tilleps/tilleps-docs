@@ -1,0 +1,25 @@
+{
+  "tasks": {
+    "clean": "rm -Rf var & rm -Rf node_modules & rm -Rf dist",
+    "docs:dev": "deno run --allow-read --allow-ffi --allow-env --allow-run --allow-write --allow-sys --allow-net vitepress dev config",
+    "docs:build": "deno run --allow-read --allow-ffi --allow-env --allow-run --allow-write --allow-sys vitepress build config",
+    "docs:preview": "deno run --allow-read --allow-ffi --allow-env --allow-run --allow-write --allow-sys --allow-net vitepress preview config"
+  },
+  "fmt": {
+    "proseWrap": "preserve"
+  },
+  "nodeModulesDir": "auto",
+  "imports": {
+    "dayjs": "npm:dayjs",
+    "debug": "npm:debug",
+    "@braintree": "npm:@braintree",
+    "@braintree/sanitize-url": "npm:@braintree/sanitize-url",
+    "cytoscape": "npm:cytoscape@^3.32.0",
+    "cytoscape-cose-bilkent": "npm:cytoscape-cose-bilkent@^4.1.0",
+    "markdown-it-task-lists": "npm:markdown-it-task-lists@^2.1.1",
+    "mermaid": "npm:mermaid@^11.8.0",
+    "vitepress": "npm:vitepress@^2.0.0-alpha.7",
+    "vitepress-plugin-mermaid": "npm:vitepress-plugin-mermaid@^2.0.17",
+    "vue": "npm:vue@^3.5.17"
+  }
+}
